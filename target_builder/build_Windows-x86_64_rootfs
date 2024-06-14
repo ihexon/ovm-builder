@@ -310,18 +310,6 @@ main() {
 		install_deps
 		write_podman_config
 		pack_ovmfs
-		
-
-
-		echo '================================='
-		echo OVMCORE_ROOTFS="${OVMCORE_FS}"
-		echo OVMCORE_ROOTFS_ARCHIVE="${OUTPUT_DIR}/ovmrootfs.tar.xz"
-		echo OVMCORE_OTAFS="${OVMCORE_OTAFS}"
-		echo OVMCORE_OTAFS_ARCHIVE="${OUTPUT_DIR}/ovmrootfs_ota.tar.xz"
-		echo BUSYBOX_BIN="${BUSYBOX_BIN}"
-		echo PODMAN="${PODMAN_BIN}"
-		echo PODMAN_REMOTE_BIN="${PODMAN_REMOTE_BIN}"
-		echo '================================='
 	else
 		exit 1
 	fi
